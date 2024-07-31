@@ -1,8 +1,6 @@
 import type { ConnectorMetadata } from '@logto/connector-kit';
 import { ConnectorPlatform, ConnectorConfigFormItemType } from '@logto/connector-kit';
 
-export const authorizationEndpoint = 'https://oauth.telegram.org/auth';
-// Scope is set to write because we might want to send the Bot a message at some point?
 export const scope = 'write';
 
 export const defaultMetadata: ConnectorMetadata = {
@@ -35,10 +33,10 @@ export const defaultMetadata: ConnectorMetadata = {
       placeholder: 'secret-value',
     },
     {
-      key: 'origin',
+      key: 'serverUrl',
       type: ConnectorConfigFormItemType.Text,
       required: true,
-      label: 'Bot Origin',
+      label: 'Server URL',
       placeholder: 'https://example.com',
     },
   ],

@@ -3,6 +3,7 @@ import { z } from 'zod';
 export const telegramConfigGuard = z.object({
   botToken: z.string(),
   origin: z.string(),
+  serverUrl: z.string(),
 });
 
 export type TelegramConfig = z.infer<typeof telegramConfigGuard>;

@@ -48,7 +48,7 @@ const getAuthorizationUri =
       return_to: returnTo.toString(),
     });
 
-    return `${authorizationEndpoint}?${queryParameters.toString()}`;
+    return `${config.serverUrl}?${queryParameters.toString()}`;
   };
 
 const authorizationCallbackHandler = async (parameterObject: unknown) => {
