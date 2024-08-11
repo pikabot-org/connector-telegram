@@ -13,7 +13,7 @@ import {
   ConnectorType,
 } from '@logto/connector-kit';
 
-import { authorizationEndpoint, scope, defaultMetadata } from './constant.js';
+import { scope, defaultMetadata } from './constant.js';
 import {
   type TelegramConfig,
   userInfoResponseGuard,

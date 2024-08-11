@@ -39,6 +39,13 @@ export const defaultMetadata: ConnectorMetadata = {
       label: 'Server URL',
       placeholder: 'https://example.com',
     },
+    {
+      key: 'origin',
+      type: ConnectorConfigFormItemType.Text,
+      required: true,
+      label: 'Origin',
+      placeholder: 'https://example.com',
+    }
   ],
 };
 
